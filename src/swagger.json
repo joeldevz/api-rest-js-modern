@@ -1,0 +1,48 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Api",
+    "version": "1.0.0",
+    "title": "Api",
+    "termsOfService": "http://scoutea.io/terms/",
+    "contact": {
+      "email": "apiteam@scoutea.io"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/v0",
+  "tags": [
+    {
+      "name": "Api",
+      "description": "Everything about your Pets"
+    }
+  ],
+  "schemes": ["http", "https"],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": ["Api"],
+        "summary": "get helloWorld",
+        "description": "",
+        "operationId": "createPlayer",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "409": {
+            "description": "Conflic"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}
